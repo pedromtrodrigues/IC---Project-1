@@ -52,7 +52,20 @@ unsigned char BitStream::read_bit()
     p++;
     return bit;
 }
+unsigned char *BitStream::read_nbits(int n)
+{
+    if (mode != 10)
+        throw "Invalid mode";
 
+    unsigned char *array = new unsigned char[n];
+    int i = 0;
+    while (i < n)
+    {
+        array[i] = read_bit();
+    }
+
+    return array;
+}
 void BitStream::write_bit(char bit)
 {
     if (mode != 1)

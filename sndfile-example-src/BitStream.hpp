@@ -1,5 +1,4 @@
-#ifndef BITSTREAM_H
-#define BITSTREAM_H
+#define BitStream_H
 
 #include <iostream>
 #include <fstream>
