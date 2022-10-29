@@ -21,7 +21,7 @@ public:
     BitStream(const char *file, char mode);
     unsigned char read_bit();
     void write_bit(char bit);
-    void read_nbits(int n, unsigned char *bits);
+    unsigned char *read_nbits(int n);
     void write_nbits(int n, unsigned char *bits);
     bool eoF();
     void closeF();
