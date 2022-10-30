@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src
+CMAKE_SOURCE_DIR = /home/pedro/Desktop/IC---Project-1/sndfile-example-src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src/build
+CMAKE_BINARY_DIR = /home/pedro/Desktop/IC---Project-1/sndfile-example-src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src/build/CMakeFiles /home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/Desktop/IC---Project-1/sndfile-example-src/build/CMakeFiles /home/pedro/Desktop/IC---Project-1/sndfile-example-src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/Desktop/IC---Project-1/sndfile-example-src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,6 +168,56 @@ wav_quant/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
 .PHONY : wav_quant/fast
 
+#=============================================================================
+# Target rules for targets named wav_effects
+
+# Build rule for target.
+wav_effects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wav_effects
+.PHONY : wav_effects
+
+# fast build rule for target.
+wav_effects/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/build
+.PHONY : wav_effects/fast
+
+#=============================================================================
+# Target rules for targets named test_bitstream
+
+# Build rule for target.
+test_bitstream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bitstream
+.PHONY : test_bitstream
+
+# fast build rule for target.
+test_bitstream/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bitstream.dir/build.make CMakeFiles/test_bitstream.dir/build
+.PHONY : test_bitstream/fast
+
+test_bitstream.o: test_bitstream.cpp.o
+.PHONY : test_bitstream.o
+
+# target to build an object file
+test_bitstream.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bitstream.dir/build.make CMakeFiles/test_bitstream.dir/test_bitstream.cpp.o
+.PHONY : test_bitstream.cpp.o
+
+test_bitstream.i: test_bitstream.cpp.i
+.PHONY : test_bitstream.i
+
+# target to preprocess a source file
+test_bitstream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bitstream.dir/build.make CMakeFiles/test_bitstream.dir/test_bitstream.cpp.i
+.PHONY : test_bitstream.cpp.i
+
+test_bitstream.s: test_bitstream.cpp.s
+.PHONY : test_bitstream.s
+
+# target to generate assembly for a file
+test_bitstream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bitstream.dir/build.make CMakeFiles/test_bitstream.dir/test_bitstream.cpp.s
+.PHONY : test_bitstream.cpp.s
+
 wav_cp.o: wav_cp.cpp.o
 .PHONY : wav_cp.o
 
@@ -215,6 +265,30 @@ wav_dct.s: wav_dct.cpp.s
 wav_dct.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/wav_dct.cpp.s
 .PHONY : wav_dct.cpp.s
+
+wav_effects.o: wav_effects.cpp.o
+.PHONY : wav_effects.o
+
+# target to build an object file
+wav_effects.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.o
+.PHONY : wav_effects.cpp.o
+
+wav_effects.i: wav_effects.cpp.i
+.PHONY : wav_effects.i
+
+# target to preprocess a source file
+wav_effects.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.i
+.PHONY : wav_effects.cpp.i
+
+wav_effects.s: wav_effects.cpp.s
+.PHONY : wav_effects.s
+
+# target to generate assembly for a file
+wav_effects.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.s
+.PHONY : wav_effects.cpp.s
 
 wav_hist.o: wav_hist.cpp.o
 .PHONY : wav_hist.o
@@ -272,16 +346,24 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test_bitstream"
 	@echo "... wav_cp"
 	@echo "... wav_dct"
+	@echo "... wav_effects"
 	@echo "... wav_hist"
 	@echo "... wav_quant"
+	@echo "... test_bitstream.o"
+	@echo "... test_bitstream.i"
+	@echo "... test_bitstream.s"
 	@echo "... wav_cp.o"
 	@echo "... wav_cp.i"
 	@echo "... wav_cp.s"
 	@echo "... wav_dct.o"
 	@echo "... wav_dct.i"
 	@echo "... wav_dct.s"
+	@echo "... wav_effects.o"
+	@echo "... wav_effects.i"
+	@echo "... wav_effects.s"
 	@echo "... wav_hist.o"
 	@echo "... wav_hist.i"
 	@echo "... wav_hist.s"

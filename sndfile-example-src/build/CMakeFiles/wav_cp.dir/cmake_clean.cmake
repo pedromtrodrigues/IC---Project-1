@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-bin/wav_cp"
-  "/home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-bin/wav_cp.pdb"
+  "/home/pedro/Desktop/IC---Project-1/sndfile-example-bin/wav_cp"
+  "/home/pedro/Desktop/IC---Project-1/sndfile-example-bin/wav_cp.pdb"
   "CMakeFiles/wav_cp.dir/wav_cp.cpp.o"
   "CMakeFiles/wav_cp.dir/wav_cp.cpp.o.d"
 )

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pedro/Desktop/IC/Praticas/Guião1/sndfile-example-src/wav_quant.cpp" "CMakeFiles/wav_quant.dir/wav_quant.cpp.o" "gcc" "CMakeFiles/wav_quant.dir/wav_quant.cpp.o.d"
+  "/home/pedro/Desktop/IC---Project-1/sndfile-example-src/wav_quant.cpp" "CMakeFiles/wav_quant.dir/wav_quant.cpp.o" "gcc" "CMakeFiles/wav_quant.dir/wav_quant.cpp.o.d"
   )
 
 # Targets to which this target links.
